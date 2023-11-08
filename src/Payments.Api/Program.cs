@@ -1,6 +1,7 @@
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using Payments.Api.Business.Services;
+using Payments.Api.Controllers;
 using Payments.Api.Integration.Data;
 using Payments.Api.Integration.Http;
 using System.Reflection.Metadata.Ecma335;
@@ -15,10 +16,11 @@ builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder =>
     containerBuilder.RegisterType<SettlementService>().As<ISettlementService>().SingleInstance().PropertiesAutowired();
     containerBuilder.RegisterType<AuthorizationClient>().As<IAuthorizationClient>().SingleInstance().PropertiesAutowired();
     containerBuilder.RegisterType<SettlementClient>().As<ISettlementClient>().SingleInstance().PropertiesAutowired();
+    containerBuilder.RegisterType<PaymentsController>().SingleInstance().PropertiesAutowired();
 });
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddControllersAsServices();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

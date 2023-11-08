@@ -38,7 +38,7 @@ namespace Payments.Api.Tests
 
             //var request = new HttpRequestMessage(HttpMethod.Post, "api/Payments/authorize/v1");
             var data = "256358";
-            var expected = $"Mock Success: {data}";
+            var expected = $"Mock Success: Authorization Successful - {data}";
             var httpContent = JsonContent.Create(data);
             var httpResponse = client.PostAsync("api/Payments/authorize/v1", httpContent).Result;
             Assert.True(httpResponse.IsSuccessStatusCode);
