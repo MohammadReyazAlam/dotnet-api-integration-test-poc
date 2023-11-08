@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Payments.Api", "src\Payments.Api\Payments.Api.csproj", "{BBF02900-B8DA-443F-81CF-DF1EEAB7F90B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Payments.Api.Tests", "tests\Payments.Api.Tests\Payments.Api.Tests.csproj", "{06A689BF-36F1-4A35-9B38-20AE79781DE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6F9C68F5-443B-4346-B4A9-7C6155DF17D3}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBF02900-B8DA-443F-81CF-DF1EEAB7F90B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBF02900-B8DA-443F-81CF-DF1EEAB7F90B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBF02900-B8DA-443F-81CF-DF1EEAB7F90B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBF02900-B8DA-443F-81CF-DF1EEAB7F90B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06A689BF-36F1-4A35-9B38-20AE79781DE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06A689BF-36F1-4A35-9B38-20AE79781DE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06A689BF-36F1-4A35-9B38-20AE79781DE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06A689BF-36F1-4A35-9B38-20AE79781DE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F6A33D44-0B2F-4BD1-8058-F7ECFEB227E7}
+	EndGlobalSection
+EndGlobal
